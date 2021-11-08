@@ -15,9 +15,13 @@ const getCircularReplacer = () => {
 
 
 const sample = (req, res) => {
-var v = JSON.stringify(req, getCircularReplacer(),4)
-console.log(v)
+  if (req.method === `POST`) {
+console.log(req.body)
+    res.send(`I am POST`)
+  } else {
+    // Handle other methods or return error
+  
   res.status(200).json(v)
-}
+}}
 
 export default sample
