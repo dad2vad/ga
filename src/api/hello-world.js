@@ -1,6 +1,6 @@
 const sample = (req, res) => {
-
-  res.status(200).json(req)
+console.log(req)
+  res.status(200).json({ message: "Hello, World!" })
 }
 
 export default sample
