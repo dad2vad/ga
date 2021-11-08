@@ -1,6 +1,6 @@
 const sample = (req, res) => {
 
-  res.status(200).json(JSON.stringify(req,null,4))
+  res.status(200).json(req)
 }
 
 export default sample
