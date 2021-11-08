@@ -17,7 +17,7 @@ const getCircularReplacer = () => {
 const sample = (req, res) => {
   if (req.method === `POST`) {
 console.log(req.body)
-    res.send(`I am POST`)
+    res.status(200).json(req.body)
   } else {
     // Handle other methods or return error
   
